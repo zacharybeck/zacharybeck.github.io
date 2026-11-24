@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Zachary Beck</title>
+  <meta name="description" content="About Zachary Beck, mechanical engineering student at the University of Portland.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <script src="js/content.js"></script>
+  <script src="js/projects-data.js"></script>
+  <script>
+    (function () {
+      var d = document.documentElement, t = null, a = null, s = window.SITE || {};
+      try { t = localStorage.getItem("theme"); a = localStorage.getItem("accent"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      if (!(s.showAccentPicker && (a === "teal" || a === "lavender"))) {
+        a = s.accent === "lavender" ? "lavender" : "teal";
+      }
+      d.setAttribute("data-theme", t);
+      d.setAttribute("data-accent", a);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-component="header"></header>
+
+  <main id="main" class="container page" data-render="page">
+    <noscript><p>This page needs JavaScript turned on to show its content.</p></noscript>
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

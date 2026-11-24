@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zachary Beck | Mechanical engineering portfolio</title>
+  <meta name="description" content="Zachary Beck is a mechanical engineering student at the University of Portland. Projects in aircraft design, manufacturing, and product design.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <script src="js/content.js"></script>
+  <script src="js/projects-data.js"></script>
+  <script>
+    (function () {
+      var d = document.documentElement, t = null, a = null, s = window.SITE || {};
+      try { t = localStorage.getItem("theme"); a = localStorage.getItem("accent"); } catch (e) {}
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      if (!(s.showAccentPicker && (a === "teal" || a === "lavender"))) {
+        a = s.accent === "lavender" ? "lavender" : "teal";
+      }
+      d.setAttribute("data-theme", t);
+      d.setAttribute("data-accent", a);
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-component="header"></header>
+
+  <main id="main">
+    <section class="hero container" aria-label="Introduction">
+      <div class="hero-text">
+        <h1 data-site="name">Your Name</h1>
+        <p class="lead" data-site="title">Your title</p>
+        <div class="prose" data-render="bio"></div>
+        <p class="thanks" data-site="thanks"></p>
+        <ul class="quick-links" data-render="quick-links"></ul>
+      </div>
+      <figure class="hero-photo">
+        <img data-site="photo" src="assets/profile-placeholder.svg" alt="" width="480" height="600">
+        <figcaption data-site="photoCaption" hidden></figcaption>
+      </figure>
+    </section>
+
+    <noscript><p class="container page">This site needs JavaScript turned on to show its content.</p></noscript>
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
