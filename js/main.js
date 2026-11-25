@@ -403,7 +403,13 @@
         pic ? el("img", { class: "group-top-img", src: pic, alt: group.headerImageAlt || group.imageAlt || "", width: 600, height: 900 }) : null
       );
       head.replaceWith(top);
-      text.append(head, intro);
+      // A prompt near the top so visitors do not have to scroll to find the projects.
+      const firstSection = sections.find(Boolean);
+      if (firstSection) firstSection.id = "group-projects";
+      const jump = firstSection
+        ? el("a", { class: "btn btn-primary group-cta", href: "#group-projects", text: "View the projects ↓" })
+        : null;
+      text.append(head, jump, intro);
       grid.replaceWith(...sections.filter(Boolean));
       document.title = `${group.title} — ${SITE.name}`;
       return;

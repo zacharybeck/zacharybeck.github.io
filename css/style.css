@@ -2494,3 +2494,9 @@ a.tile:hover .tile-cta {
 .note-with-fig .note-text p + p {
   margin-top: 8px;
 }
+
+/* "View the projects" prompt on a group page */
+.group-cta { margin: 18px 0 22px; }
+#group-projects { scroll-margin-top: 90px; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
