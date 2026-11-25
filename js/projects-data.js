@@ -201,7 +201,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2025,
     "title": "SAE Aero Micro: Airframe Structure & Testing",
-    "summary": "A structure built from carbon fiber pressing on carbon fiber, with printed joints only for alignment, and loads worked out and tested for each component.",
+    "summary": "The team conducted structural testing on a physical model before final manufacturing.",
     "year": "2024–2025",
     "tags": [
       "Structural testing",
@@ -213,7 +213,7 @@ window.PROJECTS = [
     "photos": [],
     "featured": false,
     "overview": [
-      "We designed the aircraft for a 3 g limit and checked it with a variety of tests on a simplified frame with only the main structure: the wings and stringers, the tail, and the rear landing gear.",
+      "Before committing to our structural design and final manufacturing, we tested the aircraft to its 3 g limit with a variety of tests using a structural model. We tested the wing assembly, the tail, and the rear landing gear as our main failure points.",
       "## The structural concept",
       "The wing uses thin carbon fiber stringers to carry the wing loading. This is structurally efficient as it maximizes the area moment of inertia of the carbon fiber while using the balsa ribs to keep them from buckling. 3D-printed joints were used to align the rods and as a rule did not carry much load, instead relying on clever carbon fiber member arrangement. I wrote a MATLAB script to find the area moment of inertia for the entire assembly and found that rods thinner than 0.3 mm could handle the bending stress but in reality they were too flexible to assemble. After testing multiple sizes, we decided to use 3 mm circular pultruded carbon rods everywhere. They see about 16 MPa, a safety factor of over 180.",
       "That made the joints, where balsa, printed parts, and epoxy meet, the part to watch. Stress concentrates there and can't be calculated reliably, so we tested them by breaking them. Before building the final aircraft, we made simplified versions of the areas we worried about, and we identified the side-of-body joint, which makes room for the payload, as the most important one. The [fabrication page](project.html?p=sae-micro-fabrication) covers how the joints were built.",
