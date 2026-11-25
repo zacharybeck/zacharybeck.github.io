@@ -169,7 +169,7 @@
 
   // A group of projects (like SAE) shown as one large tile that opens the group's page.
   function groupTile(g) {
-    const count = PROJECTS.filter((p) => p.group === g.slug && !p.parent).length; // main projects; their parts sit under them
+    const count = PROJECTS.filter((p) => p.group === g.slug).length; // every page linked from the group, sub-projects included
     const groupHref = `projects.html?group=${encodeURIComponent(g.slug)}`;
     // The SAE tile's picture is split in two (Advanced on top, Micro below); each half opens that class's project page.
     const SPLITS = {
