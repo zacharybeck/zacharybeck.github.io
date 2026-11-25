@@ -326,7 +326,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2026,
     "title": "SAE Aero Advanced: Aircraft Trade Studies",
-    "summary": "Trade studies that chose a VTOL tricopter with two forward tilt-rotors and a rover-style payload, then defined the aircraft's specifics.",
+    "summary": "Trade studies that determined aircraft configuration.",
     "year": "2025–2026",
     "tags": [
       "Trade study",
@@ -365,7 +365,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2026,
     "title": "SAE Aero Advanced: Wing Sizing & Hot-Wire Cutting",
-    "summary": "A wing sized from flight-test transition data to finish inside the payload zone, cut from foam with a hot wire on carbon fiber spars that come off, so the aircraft packs flat.",
+    "summary": "Wing sizing from flight transition data, and wing construction.",
     "year": "2025–2026",
     "tags": [
       "Wing sizing",
@@ -400,7 +400,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2026,
     "title": "SAE Aero Advanced: Fuselage Design",
-    "summary": "A laser-cut foam fuselage, redesigned in April for new avionics and battery positions.",
+    "summary": "A redesigned fuselage, and the exploration of a new manufacturing technique.",
     "year": "2025–2026",
     "tags": [
       "Laser cutting",
@@ -429,7 +429,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2026,
     "title": "SAE Aero Advanced: Integrated Landing Testing",
-    "summary": "Testing in March exposed weak points in the landing gear, catch mechanism, and payload lift mechanism, and the April redesign fixed them.",
+    "summary": "Testing the interaction between the payload and the aircraft during landing exposed weak points and prompted a redesign.",
     "year": "2025–2026",
     "tags": [
       "Failure analysis",
