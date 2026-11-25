@@ -2569,3 +2569,51 @@ a.tile:hover .tile-cta {
   padding-top: 10px;
   font-size: 0.78rem;
 }
+
+/* Project side panel, roomier and easier to scan */
+.detail-layout,
+.detail-top.has-panel {
+  grid-template-columns: minmax(0, 1fr) 360px;
+}
+.worked-panel {
+  padding: 26px 26px 22px;
+  border-top: 4px solid var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+.worked-panel h2 {
+  margin: 0 0 16px;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+}
+.worked-panel .part-nav-list {
+  margin: 0;
+}
+.worked-panel .part-nav-list li + li {
+  margin-top: 2px;
+}
+.worked-panel .part-nav-list a {
+  padding: 9px 12px;
+  border-left-width: 4px;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+.worked-panel .part-nav-list a:hover {
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+}
+.worked-panel .part-nav-list li.is-current a {
+  border-left-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+}
+.worked-panel .worked-role-label {
+  margin: 20px 0 8px;
+  padding: 16px 12px 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 900px) {
+  .detail-layout,
+  .detail-top.has-panel {
+    grid-template-columns: 1fr;
+  }
+}

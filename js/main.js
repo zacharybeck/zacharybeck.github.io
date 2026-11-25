@@ -823,7 +823,7 @@
           { class: "worked-panel", "aria-label": "Pages in this project" },
           el("h2", { text: rootProject.navTitle || "Pages in this project" }),
           overviewItem ? el("ul", { class: "part-nav-list" }, navItem(overviewItem)) : null,
-          otherItems.length ? el("p", { class: "worked-role-label", text: "What I worked on:" }) : null,
+          otherItems.length ? el("p", { class: "worked-role-label", text: "Some of what I worked on:" }) : null,
           otherItems.length ? el("ul", { class: "part-nav-list" }, otherItems.map(navItem)) : null
         )
       : null;

@@ -286,7 +286,7 @@ window.PROJECTS = [
       "![Diagram of the six mission phases](assets/library/adv-mission-phases.png \"The six phases of the mission: takeoff, transition to vertical flight, delivery, capture, transition to horizontal flight, and landing.\")",
       "The SAE Aero Design Advanced Class is a fully autonomous vertical takeoff and landing (VTOL) challenge. The aircraft must deliver and capture payloads in an 8 ft by 8 ft landing zone, with the aircraft and payload together weighing at most 3.5 lb. {fig:adv-mission-phases} shows the six phases of the mission.",
       "![The aircraft in the air at the airfield, with the T-frame, wing and tail visible](assets/library/adv-mock-run-aircraft-in-air.jpg \"The aircraft in the air during a mock run of the competition on April 8.\")",
-      "Note[adv-tilt-mechanism.png \"The tilt mechanism on a front motor, which pivots up for vertical flight and articulates to control yaw.\"]: ## Tricopter configuration\nThe rules allow no more than three motors and propellers, so the aircraft is a tricopter. The two front motors tilt up for the transition to vertical flight and control yaw by articulating, and a third motor at the tail provides lift in vertical flight. The [frame trade study](project.html?p=sae-advanced-frame-trade-study) shows how the team chose this configuration.",
+      "Note[adv-tilt-mechanism.png \"The tilt mechanism on a front motor, which pivots up for vertical flight and articulates to control yaw.\"]: ## Tricopter configuration\nThe rules allow no more than three motors and propellers, so the aircraft is a tricopter. The two front motors tilt up for the transition to vertical flight and control yaw by articulating, and a third motor at the tail provides lift in vertical flight. The [aircraft trade studies](project.html?p=sae-advanced-frame-trade-study) shows how the team chose this configuration.",
       "The project ran for one full school year, but I spent the fall at my MECOP internship, so I joined the team in the spring. From then on I led the mechanical design, project schedule, and design report. {vid:advanced-flight-test} shows a test flight and {vid:advanced-payload-operations} shows the payload operations.",
       "Video: assets/video/advanced-flight-test.mp4 \"A prototype test flight: vertical takeoff, transition to horizontal flight, and vertical landing.\"",
       "Video: assets/video/advanced-payload-operations.mp4 \"Payload operations on a landing mat during testing: the aircraft and two payloads.\" 2x",
@@ -313,7 +313,7 @@ window.PROJECTS = [
       "## Next season",
       "The team plans to return. The payload and capture design will be reused, and the aircraft gets a full airframe redesign. See the [2027 season](project.html?p=sae-aero-advanced-2027).",
       "## What I worked on",
-      "- [Overview](project.html?p=sae-aero-advanced-vtol): Built the schedule and bill of materials, led weight reduction efforts, and was lead author of the design report.\n- [Frame Trade Study](project.html?p=sae-advanced-frame-trade-study): Built the CAD model, the frame layout, and the part integration.\n- [Wing Sizing & Hot-Wire Cutting](project.html?p=sae-advanced-wings): Chose how much to reduce the wing from flight-test data, and configured and optimized the foam cutter G-code generation.\n- [Fuselage Design](project.html?p=sae-advanced-fuselage): Turned the 3D fuselage shape into flat laser-cut parts.\n- [Integrated Landing Testing](project.html?p=sae-advanced-shock-load-redesign): Conducted mechanical testing, recommended fixes, and retested."
+      "- [Overview](project.html?p=sae-aero-advanced-vtol): Built the schedule and bill of materials, led weight reduction efforts, and was lead author of the design report.\n- [Aircraft Trade Studies](project.html?p=sae-advanced-frame-trade-study): Built the CAD model, the frame layout, and the part integration.\n- [Wing Sizing & Hot-Wire Cutting](project.html?p=sae-advanced-wings): Chose how much to reduce the wing from flight-test data, and configured and optimized the foam cutter G-code generation.\n- [Fuselage Design](project.html?p=sae-advanced-fuselage): Turned the 3D fuselage shape into flat laser-cut parts.\n- [Integrated Landing Testing](project.html?p=sae-advanced-shock-load-redesign): Conducted mechanical testing, recommended fixes, and retested."
     ],
     "highlights": [],
     "links": [],
@@ -325,8 +325,8 @@ window.PROJECTS = [
     "slug": "sae-advanced-frame-trade-study",
     "group": "sae-aero",
     "season": 2026,
-    "title": "SAE Aero Advanced: Frame Trade Study",
-    "summary": "Trade studies in the fall chose a VTOL tricopter with two forward tilt-rotors and a rover-style payload.",
+    "title": "SAE Aero Advanced: Aircraft Trade Studies",
+    "summary": "Trade studies that chose a VTOL tricopter with two forward tilt-rotors and a rover-style payload, then defined the aircraft's specifics.",
     "year": "2025–2026",
     "tags": [
       "Trade study",
@@ -337,7 +337,8 @@ window.PROJECTS = [
     "imageAlt": "Labeled top view of the T-frame with motors, wing attachment points and empennage",
     "featured": false,
     "overview": [
-      "The fall went to conceptual design and trade studies. The goal was a fully autonomous delivery and capture aircraft, so the team ranked four mission strategies and four VTOL configurations from best (4) to worst (1) on project feasibility and three scoring metrics.",
+      "While conceptual design and system-level trade studies were conducted in the fall, the final aircraft configuration and some of the aircraft specifics were not yet set. This is where I came in, helping define the aircraft. The goal was a fully autonomous delivery and capture aircraft, so the team ranked four mission strategies and four VTOL configurations from best (4) to worst (1) on project feasibility and three scoring metrics.",
+      "The highest-level choices, a VTOL tricopter with a payload that can drive itself around, were ones I had worked out earlier, in the late spring and summer before the fall. I did those trade studies up front, then left for my MECOP internship, and came back in the spring to run further trade studies on the specifics of the aircraft.",
       "## What drove the score",
       "Stats:\n- 340% | raise in score for fully autonomous operation\n- 55–75% | of the score comes from capture repeatability\n- 1.5 points | added per 0.1 lb of payload, with full autonomy",
       "## Mission strategy: a VTOL aircraft and a moving payload",
