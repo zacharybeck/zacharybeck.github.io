@@ -553,7 +553,7 @@ window.PROJECTS = [
   {
     "slug": "zowie-ec2b-button",
     "title": "Zowie EC2-B Side Button Replacement",
-    "summary": "After breaking my mouse, I designed this replacement side button based on the broken part, as no replacement part was available and no printable file existed. I published it on Thingiverse for others to use.",
+    "summary": "A 3D-printed replacement side button for a Zowie EC2-B mouse, designed when no replacement part existed.",
     "year": "2021",
     "tags": [
       "3D printing",
@@ -564,7 +564,7 @@ window.PROJECTS = [
     "imageAlt": "The replacement side button fitted on a Zowie mouse",
     "featured": false,
     "overview": [
-      "I designed this replacement side button after breaking the button on my Zowie EC2-B mouse. As no replacement part was available and no printable file existed, I designed and printed my own version based on the broken part and published it on Thingiverse for others to use.",
+      "After breaking the button on my Zowie EC2-B mouse, I designed this replacement side button based on the broken part, as no replacement part was available and no printable file existed. I published it on Thingiverse for others to use.",
       "## The design",
       "The button has an organic shape, so the design took a lot of trial and error, and I used several Fusion 360 functions that I had not used before. The part drops directly into the mouse, with its center post seated in its slot. It is printed with supports at a 0.12 mm layer height and 100% infill, and the top surface is sanded, down to 400 grit, for a smooth feel.",
       "![Render of the replacement side button](assets/library/zowie-button-render.png \"A render of the replacement button.\")",
@@ -579,7 +579,7 @@ window.PROJECTS = [
   {
     "slug": "folding-hanger",
     "title": "Folding Hanger",
-    "summary": "In high school, I designed a folding hanger out of laser-cut parts.",
+    "summary": "A folding hanger that goes into a shirt from the top, with a cam channel lock and laser-cut parts, designed as a challenge for myself in high school.",
     "year": "2022",
     "tags": [
       "Product design",
@@ -592,7 +592,7 @@ window.PROJECTS = [
     "photos": [],
     "featured": false,
     "overview": [
-      "This folding hanger project was a design challenge I set for myself in high school. It taught me a lot about design and manufacturing. The problem arose from my real-life experience: I like hanging up my clothes, but a hanger has to be stretched through a shirt's collar or pushed in from the bottom. I wanted a hanger that folds, so it can go in from the top and then unfold. I could not find anything comparable at the time, so I designed and built one.",
+      "In high school, I designed a folding hanger out of laser-cut parts, as a design challenge I set for myself. It taught me a lot about design and manufacturing. The problem arose from my real-life experience: I like hanging up my clothes, but a hanger has to be stretched through a shirt's collar or pushed in from the bottom. I wanted a hanger that folds, so it can go in from the top and then unfold. I could not find anything comparable at the time, so I designed and built one.",
       "## Design",
       "My first design used rubber bands and springs to hold the arms up, and the arms were closed by hand. The weight of a t-shirt was enough to deflect the arms, because the moment is much larger at the ends, so I moved to a mechanical lock.",
       "Collage: folding-hanger-sketch.jpg, 3d-printed-part-black.jpg \"My first concept sketch, and an early 3D-printed prototype that used elastics to hold the arms up.\"",
@@ -615,7 +615,7 @@ window.PROJECTS = [
   {
     "slug": "halloween-project",
     "title": "Halloween Costume Earpieces",
-    "summary": "For Halloween one year, I dressed up as Raymond from Everything Everywhere All at Once and built replicas of his Bluetooth earpiece.",
+    "summary": "Two 3D-printed, light-up earpieces for a Halloween costume, designed and built in a day or two.",
     "tags": [
       "3D printing",
       "LED electronics",
@@ -625,7 +625,7 @@ window.PROJECTS = [
     "imageAlt": "A hand holding a black earpiece with a lit green LED over a workbench with a soldering iron",
     "featured": false,
     "overview": [
-      "For Halloween 2022 I dressed as Raymond from Everything Everywhere All at Once and built two replicas of his Bluetooth earpiece from the film. Each earpiece is 3D printed and contains an LED and a small battery. It was a small project, designed and built in a day or two.",
+      "For Halloween one year, I dressed up as Raymond from Everything Everywhere All at Once and built replicas of his Bluetooth earpiece from the film. Each earpiece is 3D printed and contains an LED and a small battery. It was a small project, designed and built in a day or two.",
       "## Design",
       "I sketched the design first and planned how to build it on the 3D printer. The earpiece is too complicated to print as one piece, because 3D printing needs flat sides to build on, so it is modular: the parts are printed separately and joined with screws. Wax paper diffuses the light from the LED.",
       "Callout: ## Fit\nThe earpiece had to stay in my ear and remain comfortable for a full night of wear. It has a section that wraps around the ear and a small section that sits inside it. Getting this fit right took most of the work.",
