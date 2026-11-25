@@ -141,7 +141,7 @@ window.PROJECTS = [
     "imageAlt": "Velocity streamlines flowing over a low-aspect-ratio wing with winglets",
     "featured": false,
     "overview": [
-      "I wrote Aero UP, a MATLAB simulator, to find the physical limits of the competition and to make sense of the complicated scoring. The score depends on base weight, payload weight, wingspan, and takeoff distance, which is scored in zones at 10, 25, 50, and 100 feet.",
+      "One of the first things I completed on the project was writing a MATLAB simulator, called Aero UP, to find the physical limits of the competition and make sense of the complicated scoring. The score depends on base weight, payload weight, wingspan, and takeoff distance, which is scored in zones at 10, 25, 50, and 100 feet.",
       "## How Aero UP works",
       "Aero UP steps through the takeoff using lift, drag, and propeller thrust equations, and scores the flight from the takeoff distance and the weight. It is built for low-aspect-ratio wings: instead of the elliptical wing model, it uses a wing lifting-efficiency correction that I built in Ansys Fluent, described below. The aircraft weights come from CAD mockups, with material properties and estimated electronics weights.",
       "![Aero UP input variables and a sample of its text output](assets/library/report-aero-up-input-output.png \"Aero UP sample input (left) and output (right).\")",
