@@ -374,7 +374,7 @@ window.PROJECTS = [
       "G-code"
     ],
     "overview": [
-      "The final wing is a hot-wire-cut foam wing on carbon fiber spars that comes off, so the aircraft packs flat for travel. Its size comes from flight-test data on how far the aircraft needs to travel to transition from vertical to horizontal flight.",
+      "The wing is hot-wire-cut EPS foam with carbon fiber spars. One of the design goals was to have the wing be removable for travel, so the aircraft can pack flat. That also prompted removable landing gear, which I also worked on. Its size comes from flight-test data on how far the aircraft needs to travel to transition from vertical to horizontal flight.",
       "## Sizing the wing around the transition",
       "The transition, not the takeoff, sets the size of the wing. The aircraft must complete its transition from vertical to horizontal flight inside the 200 ft payload operation area. The team set an internal target of 100 ft, half of the area, so that the boundary was never a concern and the aircraft could leave the payload operation area with minimal repositioning.",
       "![Diagram in two parts. Top: one bar per measurement of the transition distance, starting from an aircraft at 0 ft. The payload operation area ends at a hard 200 ft boundary, with the area beyond it marked out of bounds, and a dashed line marks the 100 ft internal target. Before control tuning the transition ran 300 ft, past the boundary. After tuning, the average of three flights was 72 ft. After wing resizing the average was 92 ft. Bottom: the original 1250 mm wing with 100 mm marked at each tip, and the final 1050 mm wing with the same chord](assets/library/adv-wing-resizing.png \"How the wing was resized. After control tuning, three flights averaged 72 ft. The wings were then shortened from 1250 mm to 1050 mm at the same chord, which left 84% of the area and moved the average to 92 ft, against the 100 ft target.\")",
@@ -408,7 +408,7 @@ window.PROJECTS = [
       "Flat patterns"
     ],
     "overview": [
-      "The fuselage is a laser-cut foam shape that carries the avionics and the payload catch mechanism, and it was redesigned in April. I designed it in the final weeks of the season. The fuselage is a 3D shape and a laser cutter cuts flat parts, so I converted the shape into a set of 2D foam parts that assemble into the final form. The parts are laid out so that the sensing units seat in their intended locations and align with the rest of the aircraft.",
+      "After building the aircraft, we determined that it needed a fuselage redesign, mainly because a number of avionics did not fit in our very small fuselage. I designed the new fuselage in the final weeks of the season, and it is constructed from laser-cut foam board to carry the avionics and the payload catch mechanism. The fuselage is a 3D shape and a laser cutter cuts flat parts, so I converted the shape into a set of 2D foam parts that assemble into the final form. The parts are laid out so that the sensing units seat in their intended locations and align with the rest of the aircraft.",
       "![Exploded CAD view of the fuselage: two foam sidewalls, and top and bottom plates with cutouts, above and below the T-frame](assets/library/adv-fuselage-exploded.jpg \"An exploded view of the fuselage parts: the two sidewalls and the top and bottom plates.\")",
       "Foam bends around smooth curves, but the way it wraps is a little difficult to predict, and getting it right took some trial and error. My method of predicting the wrap using the CAD improved over the course of the build.",
       "The April redesign changed the fuselage shape to accommodate new avionics and battery positions and optimize the mass balance. This need was identified in part interference studies conducted in the lead-up to manufacturing (Figure 1). The new design also uses slightly different materials and adds an avionics access hatch.",
@@ -440,6 +440,7 @@ window.PROJECTS = [
     "imageAlt": "The updated payload on the landing mat, with its lift arm raised",
     "featured": false,
     "overview": [
+      "I led the testing for the aircraft, similar to the [testing on the Micro Class](project.html?p=sae-micro-airframe-structure). This caught a failure mode unique to this class, between the payload and the aircraft during landing.",
       "## What the tests showed",
       "Testing in March showed weak points in the landing gear, the catch mechanism, and the payload lift mechanism, and the April redesign addressed them. The team tested the airframe and the payload for the loads they would see in flight and landing, and after the redesign every component met or exceeded its required load in retesting.",
       "## Landing gear",
