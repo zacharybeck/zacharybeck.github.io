@@ -170,9 +170,52 @@
   // A group of projects (like SAE) shown as one large tile that opens the group's page.
   function groupTile(g) {
     const count = PROJECTS.filter((p) => p.group === g.slug && !p.parent).length; // main projects; their parts sit under them
+    const groupHref = `projects.html?group=${encodeURIComponent(g.slug)}`;
+    // The SAE tile's picture is split in two (Advanced on top, Micro below); each half opens that class's project page.
+    const SPLITS = {
+      "sae-aero": [
+        { slug: "sae-aero-advanced-vtol", label: "Advanced Class", points: "0,0 1600,0 1600,445 0,555" },
+        { slug: "sae-aero-micro-2025", label: "Micro Class", points: "0,555 1600,445 1600,1000 0,1000" },
+      ],
+    };
+    const split = SPLITS[g.slug];
+    if (split && g.image) {
+      const NS = "http://www.w3.org/2000/svg";
+      const svg = document.createElementNS(NS, "svg");
+      svg.setAttribute("class", "split-zones");
+      svg.setAttribute("viewBox", "0 0 1600 1000");
+      svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+      split.forEach((z) => {
+        const a = document.createElementNS(NS, "a");
+        a.setAttribute("href", `project.html?p=${encodeURIComponent(z.slug)}`);
+        a.setAttribute("aria-label", z.label);
+        const poly = document.createElementNS(NS, "polygon");
+        poly.setAttribute("points", z.points);
+        a.append(poly);
+        svg.append(a);
+      });
+      return el(
+        "div",
+        { class: "tile tile-wide tile-split" },
+        el("img", { class: "tile-img", src: g.image, alt: "", loading: "lazy", width: 1200, height: 750 }),
+        svg,
+        el(
+          "div",
+          { class: "tile-body" },
+          el("h3", { class: "tile-title" }, el("a", { href: groupHref, text: g.title })),
+          el("p", { class: "tile-meta", text: `${count} project${count === 1 ? "" : "s"}` }),
+          tagList((g.tags || []).slice(0, 3)),
+          el(
+            "div",
+            { class: "split-ctas" },
+            split.map((z) => el("a", { class: "tile-cta", href: `project.html?p=${encodeURIComponent(z.slug)}`, text: `${z.label} →` }))
+          )
+        )
+      );
+    }
     return el(
       "a",
-      { class: "tile tile-wide", href: `projects.html?group=${encodeURIComponent(g.slug)}` },
+      { class: "tile tile-wide", href: groupHref },
       g.image ? el("img", { class: "tile-img", src: g.image, alt: "", loading: "lazy", width: 1200, height: 750 }) : null,
       el(
         "div",
@@ -409,6 +452,12 @@
       const jump = firstSection
         ? el("a", { class: "btn btn-primary group-cta", href: "#group-projects", text: "View the projects ↓" })
         : null;
+      if (jump)
+        jump.addEventListener("click", (e) => {
+          e.preventDefault();
+          const smooth = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          firstSection.scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start" });
+        });
       text.append(head, jump, intro);
       grid.replaceWith(...sections.filter(Boolean));
       document.title = `${group.title} — ${SITE.name}`;
@@ -881,7 +930,7 @@
       }
       if (saved !== null) {
         if ("scrollRestoration" in history) history.scrollRestoration = "manual";
-        const apply = () => window.scrollTo(0, Math.max(0, sidePanel.getBoundingClientRect().top + window.scrollY - Number(saved)));
+        const apply = () => window.scrollTo({ top: Math.max(0, sidePanel.getBoundingClientRect().top + window.scrollY - Number(saved)), behavior: "instant" });
         apply();
         window.addEventListener("load", apply, { once: true });
       }
