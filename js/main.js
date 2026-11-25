@@ -1088,9 +1088,9 @@
       );
     mount.replaceChildren(
       pageHead("About", PAGES.about),
-      el("div", { class: "about-body" }, (a.paragraphs || []).slice(0, 1).map((text) => el("p", { text }))),
+      el("div", { class: "about-body" }, (a.paragraphs || []).slice(0, 2).map((text) => el("p", { text }))),
       intoSection,
-      el("div", { class: "about-body about-outside" }, (a.paragraphs || []).slice(1).map((text) => el("p", { text }))),
+      el("div", { class: "about-body about-outside" }, (a.paragraphs || []).slice(2).map((text) => el("p", { text }))),
       // Photos keep their own shape (no cropping) and sit in offset columns, like the project collages.
       // Each column's width follows the square root of its photo's shape, so wide and tall photos end up with about the same area.
       (a.photos || []).length
