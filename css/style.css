@@ -2617,3 +2617,26 @@ a.tile:hover .tile-cta {
     grid-template-columns: 1fr;
   }
 }
+
+/* Split SAE tile: two separate rounded photos with a gap, no single card behind them */
+.tile-split {
+  overflow: visible;
+  background: none;
+  box-shadow: none;
+}
+.tile-split::after {
+  display: none;
+}
+.tile-split .split-zones {
+  filter: drop-shadow(0 1px 3px rgb(20 24 40 / 0.18));
+}
+.tile-split:hover {
+  box-shadow: none;
+}
+
+/* phones: fewer lines of text over the picture, so the Micro aircraft stays visible */
+@media (max-width: 700px) {
+  .tile-split .tag-list {
+    display: none;
+  }
+}

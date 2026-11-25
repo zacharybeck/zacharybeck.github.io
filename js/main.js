@@ -174,42 +174,87 @@
     // The SAE tile's picture is split in two (Advanced on top, Micro below); each half opens that class's project page.
     const SPLITS = {
       "sae-aero": [
-        { slug: "sae-aero-advanced-vtol", label: "Advanced Class", points: "0,0 1600,0 1600,445 0,555" },
-        { slug: "sae-aero-micro-2025", label: "Micro Class", points: "0,555 1600,445 1600,1000 0,1000" },
+        { slug: "sae-aero-advanced-vtol", label: "Advanced Class", image: "assets/library/aero-cover-advanced.jpg" },
+        { slug: "sae-aero-micro-2025", label: "Micro Class", image: "assets/library/aero-cover-micro.jpg" },
       ],
     };
     const split = SPLITS[g.slug];
     if (split && g.image) {
-      // The picture itself is an SVG so each half can be clipped and can pop out on its own when hovered.
+      // Two separate photos, each with rounded corners and a gap between them like the other tiles, divided on a diagonal.
+      // The shapes are drawn in the tile's own pixel size (redrawn when it resizes), so the corners stay round at any size.
       const NS = "http://www.w3.org/2000/svg";
-      const svg = document.createElementNS(NS, "svg");
-      svg.setAttribute("class", "split-zones");
-      svg.setAttribute("viewBox", "0 0 1600 1000");
-      svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
-      svg.setAttribute("role", "group");
-      const defs = document.createElementNS(NS, "defs");
+      const mk = (tag, attrs) => {
+        const n = document.createElementNS(NS, tag);
+        Object.entries(attrs || {}).forEach(([k, v]) => n.setAttribute(k, v));
+        return n;
+      };
+      const svg = mk("svg", { class: "split-zones", preserveAspectRatio: "none", role: "group" });
+      const defs = mk("defs");
+      const grad = mk("linearGradient", { id: "split-fade", gradientUnits: "userSpaceOnUse", x1: 0, x2: 0 });
+      [["0", 0], ["0.45", 0.3], ["1", 0.9]].forEach(([o, a]) => grad.append(mk("stop", { offset: o, "stop-color": "#080a12", "stop-opacity": a })));
+      defs.append(grad);
       svg.append(defs);
-      split.forEach((z, n) => {
-        const clip = document.createElementNS(NS, "clipPath");
-        clip.setAttribute("id", `split-clip-${n}`);
-        const cp = document.createElementNS(NS, "polygon");
-        cp.setAttribute("points", z.points);
-        clip.append(cp);
+      const parts = split.map((z, n) => {
+        const clip = mk("clipPath", { id: `split-clip-${n}` });
+        const path = mk("path");
+        clip.append(path);
         defs.append(clip);
-        const a = document.createElementNS(NS, "a");
-        a.setAttribute("href", `project.html?p=${encodeURIComponent(z.slug)}`);
-        a.setAttribute("aria-label", z.label);
-        a.setAttribute("clip-path", `url(#split-clip-${n})`);
-        a.setAttribute("class", "split-half");
-        const img = document.createElementNS(NS, "image");
-        img.setAttribute("href", g.image);
-        img.setAttribute("width", "1600");
-        img.setAttribute("height", "1000");
-        img.setAttribute("preserveAspectRatio", "xMidYMid slice");
+        const a = mk("a", { href: `project.html?p=${encodeURIComponent(z.slug)}`, "aria-label": z.label, class: "split-half", "clip-path": `url(#split-clip-${n})` });
+        const img = mk("image", { href: z.image, preserveAspectRatio: "none" });
         a.append(img);
+        let fade = null;
+        if (n === split.length - 1) {
+          fade = mk("rect", { fill: "url(#split-fade)", "pointer-events": "none" });
+          a.append(fade);
+        }
         svg.append(a);
+        return { path, img, fade };
       });
-      return el(
+      const round = (pts, r) => {
+        let d = "";
+        pts.forEach((p, i) => {
+          const prev = pts[(i + pts.length - 1) % pts.length];
+          const next = pts[(i + 1) % pts.length];
+          const toward = (q) => {
+            const dx = q[0] - p[0], dy = q[1] - p[1], len = Math.hypot(dx, dy) || 1;
+            const t = Math.min(r, len / 2) / len;
+            return [p[0] + dx * t, p[1] + dy * t];
+          };
+          const a = toward(prev), b = toward(next);
+          d += `${i ? "L" : "M"}${a[0]} ${a[1]}Q${p[0]} ${p[1]} ${b[0]} ${b[1]}`;
+        });
+        return d + "Z";
+      };
+      const layout = (W, H) => {
+        if (!W || !H) return;
+        const r = 16; // same corner radius as the other tiles
+        const gap = 16; // same gap as between the other tiles
+        const tan = Math.tan((9 * Math.PI) / 180); // the diagonal follows the pitch of the Micro aircraft
+        const yc = 0.53 * H;
+        const yl = yc + (W / 2) * tan;
+        const yr = yc - (W / 2) * tan;
+        const off = gap / 2 / Math.cos((9 * Math.PI) / 180);
+        const top = [[0, 0], [W, 0], [W, yr - off], [0, yl - off]];
+        const bottom = [[0, yl + off], [W, yr + off], [W, H], [0, H]];
+        parts[0].path.setAttribute("d", round(top, r));
+        parts[1].path.setAttribute("d", round(bottom, r));
+        const sc = Math.max(W / 1600, H / 1000);
+        const iw = 1600 * sc, ih = 1000 * sc;
+        parts.forEach((pt) => {
+          pt.img.setAttribute("width", iw);
+          pt.img.setAttribute("height", ih);
+          pt.img.setAttribute("x", (W - iw) / 2);
+          pt.img.setAttribute("y", (H - ih) / 2);
+          if (pt.fade) {
+            pt.fade.setAttribute("width", W);
+            pt.fade.setAttribute("height", H);
+          }
+        });
+        grad.setAttribute("y1", H * 0.4);
+        grad.setAttribute("y2", H);
+        svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+      };
+      const tile = el(
         "div",
         { class: "tile tile-wide tile-split" },
         svg,
@@ -222,6 +267,8 @@
           el("a", { class: "tile-cta", href: groupHref, text: "Click for more →" })
         )
       );
+      if (window.ResizeObserver) new ResizeObserver((entries) => layout(entries[0].contentRect.width, entries[0].contentRect.height)).observe(tile);
+      return tile;
     }
     return el(
       "a",
