@@ -129,7 +129,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2025,
     "title": "SAE Aero Micro: Mission Simulation",
-    "summary": "Aero UP, a MATLAB takeoff simulator that scores each design, and the Fluent wing correction behind it.",
+    "summary": "Aero UP, a MATLAB takeoff simulator that scores aircraft designs to help find an optimal sizing.",
     "year": "2024–2025",
     "tags": [
       "MATLAB",
@@ -169,7 +169,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2025,
     "title": "SAE Aero Micro: Payload Tank & Slosh Control",
-    "summary": "A long 2-liter tank, a controlled center-of-gravity range, and active stabilization to handle sloshing water.",
+    "summary": "A long 2-liter tank, a controlled center-of-gravity range, and tail sizing to handle sloshing water.",
     "year": "2024–2025",
     "tags": [
       "CG analysis",
@@ -201,7 +201,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2025,
     "title": "SAE Aero Micro: Airframe Structure & Testing",
-    "summary": "The team conducted structural testing on a physical model before final manufacturing.",
+    "summary": "Load testing of a physical structural model, taken to the aircraft's 3 g limit before final manufacturing.",
     "year": "2024–2025",
     "tags": [
       "Structural testing",
@@ -239,7 +239,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2025,
     "title": "SAE Aero Micro: Fabrication & Build Planning",
-    "summary": "How we planned the Micro aircraft's manufacturing, and then built two complete airframes.",
+    "summary": "Build planning from the start of the design, a laser-cut jig, and a written sequence for the 10 gluing operations.",
     "year": "2024–2025",
     "tags": [
       "Build planning",
