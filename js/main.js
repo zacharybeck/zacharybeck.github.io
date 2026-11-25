@@ -808,27 +808,23 @@
       return ok ? { title: t[1], href: t[2], text: t[3] } : { title: "", href: "", text: l.slice(2) };
     };
     const items = hasPanel ? listLines(workedList).map(parseItem) : [];
+    // Panel: the overview link first, then "What I worked on:" and the other pages (links only, no extra text).
+    const navItem = (it) => {
+      const current = it.href === `project.html?p=${p.slug}`;
+      return el("li", { class: current ? "is-current" : null }, el("a", { href: it.href, text: it.title, "aria-current": current ? "page" : null }));
+    };
+    const linked = items.filter((it) => it.href);
+    const rootHref = `project.html?p=${rootProject.slug}`;
+    const overviewItem = linked.find((it) => it.href === rootHref);
+    const otherItems = linked.filter((it) => it !== overviewItem);
     const workedPanel = items.length
       ? el(
           "aside",
           { class: "worked-panel", "aria-label": "Pages in this project" },
           el("h2", { text: rootProject.navTitle || "Pages in this project" }),
-          el(
-            "ul",
-            { class: "part-nav-list" },
-            items
-              .filter((it) => it.href)
-              .map((it) => {
-                const current = it.href === `project.html?p=${p.slug}`;
-                return el("li", { class: current ? "is-current" : null }, el("a", { href: it.href, text: it.title, "aria-current": current ? "page" : null }));
-              })
-          ),
-          el("p", { class: "worked-role-label", text: "What I worked on" }),
-          el(
-            "ul",
-            { class: "worked-small" },
-            items.map((it) => el("li", null, it.title ? el("strong", { text: it.title }) : null, it.title ? " " : null, inline(it.text)))
-          )
+          overviewItem ? el("ul", { class: "part-nav-list" }, navItem(overviewItem)) : null,
+          otherItems.length ? el("p", { class: "worked-role-label", text: "What I worked on:" }) : null,
+          otherItems.length ? el("ul", { class: "part-nav-list" }, otherItems.map(navItem)) : null
         )
       : null;
     // a general line about my role, right above the overview (main page only)
