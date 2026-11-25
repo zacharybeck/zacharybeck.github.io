@@ -974,7 +974,7 @@
           el("div", { class: "detail-main" }, hero, el("div", { class: "detail-grid detail-grid-single" }, body)),
           el("div", { class: "detail-sticky" }, workedPanel, links.length ? el("div", { class: "detail-links" }, links) : null)
         )
-      : el("div", { class: "detail-plain" }, hero, el("div", { class: aside ? "detail-grid" : "detail-grid detail-grid-single" }, body, aside));
+      : el("div", { class: "detail-plain" }, hero, el("div", { class: "detail-grid detail-grid-single" }, body), aside);
 
     // replaceChildren turns a null into the text "null", so missing pieces are filtered out.
     mount.replaceChildren(...[
@@ -990,7 +990,6 @@
       layout,
       (p.photos || []).length ? el("div", { class: "about-photos detail-photos" }, p.photos.map((ph) => aboutPhoto(ph))) : null,
       related,
-      pager,
     ].filter(Boolean));
 
     // Moving between the pages of one project keeps the panel where it was on screen, so you do not lose your place.

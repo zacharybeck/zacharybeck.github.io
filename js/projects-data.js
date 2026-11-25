@@ -502,14 +502,14 @@ window.PROJECTS = [
     "overview": [
       "The SMUD Solar Regatta is an annual competition in which student teams build and race solar-powered boats in the cooling ponds of the decommissioned Rancho Seco Nuclear Generating Station. Our high school team built a catamaran, a boat with two hulls, as a class project, and I was closely involved in its design and construction. The project exposed me to solar panels and solar power systems.",
       "## The boat",
-      "The boat has two hulls, each built as a skin over a frame and coated with water-based polyurethane, with the solar panels mounted above them. The boat carries one operator, so buoyancy and water displacement calculations were used to verify that the hulls could support the operator's weight ({fig:solar-boat-pool-test}). Testing also compared the performance of the solar panels on sunny and cloudy days. The regatta includes a battery-powered event, but in the solar-powered event the boat ran on solar power only: the battery was not involved, and the motor was driven directly from the panels.",
+      "The boat has two hulls, each built as a skin over a frame and coated with water-based polyurethane, with the solar panels mounted above them. The boat carries one operator, so buoyancy and water displacement calculations were used to verify that the hulls could support the operator's weight ({fig:solar-boat-pool-test}). Testing also compared the performance of the solar panels on sunny and cloudy days. In the solar-powered event the boat ran on solar power only, with the motor driven directly from the panels.",
       "Callout: ## Hull end fairings (not pictured)\nThe hulls ended abruptly, which produced large wakes behind the boat. To reduce them and the associated form drag, I designed streamlined fairings, similar to the tails added to trucks, and 3D printed them to taper the end of each hull. The shape was checked with a basic CFD analysis.",
       "![The boat carrying an operator in a pool test](assets/library/solar-boat-pool-test.jpg \"The boat carrying an operator in a pool test.\")",
       "## What I worked on",
       "- Designed the frame that joins the two hulls.\n- Drew the schematic for the electrical system, including the deadman switch, and wired the whole boat.\n- Designed and 3D printed the hull end fairings that taper the end of each hull.\n- Sized the electrical components that convert the panel output to the voltage and power the motor required.\n- Machined the propeller shaft on a lathe for the team's custom propeller.\n- Supported the CAD work.",
       "Callout: ## Sustainability award\nWon the high school Sustainability award at the 2022 SMUD Solar Regatta.",
       "## Reflection",
-      "The project was led in class, so the concept was set by the class rather than by me. I remained closely involved throughout and worked to see the boat through to the competition. Our boat won the high school Sustainability award at the 2022 regatta, for choices that reused and conserved materials:",
+      "The project was led in class, so the concept was set by the class rather than by me. I worked to see the boat through to the competition. Our boat won the high school Sustainability award at the 2022 regatta, for choices that reused and conserved materials:",
       "- Natural materials for much of the boat.\n- A deck made from a piece of recycled wood.\n- A plan to reuse the aluminum frame for other projects.\n- The hull end fairings, which fixed a design problem without building a whole new hull."
     ],
     "highlights": [],
@@ -535,15 +535,15 @@ window.PROJECTS = [
     "overview": [
       "In high school, I was into homemade and modified Nerf blasters, designing and 3D printing parts for them at home. Here is a look at some of those parts and projects.",
       "## Jam door with a display",
-      "The Stryfe jam door insert mounts a 0.96 in OLED display. It was designed around a solenoid cage, which leaves room for any pusher. One M3 screw assembles it: the lock holds the screen from the bottom, and the wires exit at the top. The display is driven by an Arduino. I started from another author's open-source code from GitHub and modified it for my own needs.",
+      "The Stryfe jam door insert mounts an OLED display. It was designed around a solenoid cage, which leaves room for any pusher. The display is driven by an Arduino. I started from another author's open-source code from GitHub and modified it for my own needs.",
       "Collage: nerf-stryfe-jam-door-display.jpg, nerf-stryfe-jam-door-wiring.jpg \"The jam door with its display, and the wiring behind the door.\"",
       "## Folding battery stock",
-      "The Gryphon stock is a remix of an existing Gryphon design, and it does two jobs: it is both a folding stock and the battery holder. Most Nerf stocks do one or the other, and combining them lets the stock carry a 3S 2200 mAh battery while still folding away for storage. It is extra long, and a button releases it for smooth operation. It prints on an Ender 3 with supports only on the adapter, and it uses M3 and M4 screws and two springs.",
+      "The Gryphon stock is a remix of an existing Gryphon design, and it does two jobs: it is both a folding stock and the battery holder. Most Nerf stocks do one or the other, and combining them lets the stock carry the battery while still folding away for storage. It is extra long, and a button releases it for smooth operation.",
       "The fit is the part I am most pleased with. Once the stock is locked open it is solid against the blaster, and it holds firm when the blaster is shouldered and fired.",
       "Collage: nerf-mod-red-dot-grip.jpg, nerf-gryphon-battery-holder.jpg \"The Gryphon with its folding stock, and the battery holder inside the stock.\"",
       "Collage: nerf-gryphon-blaster.jpg, nerf-gryphon-stock-render.png, nerf-gryphon-stock-section.jpg \"The Gryphon from the side, a render of the stock, and a section view of the mechanism.\"",
       "## Custom Indra blaster",
-      "The Indra is a blaster designed by Captain Slug. I started from a custom version made by a community member in the Bay Area, which already had a custom plunger system, and customized it further in Fusion 360. The blaster now breaks down into two parts joined with pins, which makes it easier to transport and store, and I designed a custom upper that houses the barrel.",
+      "The Indra is a blaster designed by Captain Slug. I started from a custom version made by a community member in the Bay Area, which already had a custom plunger system, and customized it further. The blaster now breaks down into two parts joined with pins, which makes it easier to transport and store, and I designed a custom upper that houses the barrel.",
       "![A custom Indra blaster, full length, on a wood floor](assets/library/nerf-full-length-2.jpg \"A custom Indra blaster, full length.\")"
     ],
     "highlights": [],
@@ -566,10 +566,10 @@ window.PROJECTS = [
     "overview": [
       "After breaking the button on my Zowie EC2-B mouse, I designed this replacement side button based on the broken part, as no replacement part was available and no printable file existed. I published it on Thingiverse for others to use.",
       "## The design",
-      "The button has an organic shape, so the design took a lot of trial and error, and I used several Fusion 360 functions that I had not used before. The part drops directly into the mouse, with its center post seated in its slot. It is printed with supports at a 0.12 mm layer height and 100% infill, and the top surface is sanded, down to 400 grit, for a smooth feel.",
+      "The button has an organic shape, so the design took a lot of trial and error, and I used several Fusion 360 functions that I had not used before. The part drops directly into the mouse, with its center post seated in its slot. It is printed with supports, and the top surface is sanded for a smooth feel.",
       "![Render of the replacement side button](assets/library/zowie-button-render.png \"A render of the replacement button.\")",
       "## Use",
-      "I used the button extensively for more than a year, and it is still on my mouse, though it is beginning to wear out. The part saved me the cost of a new mouse, and it has saved others around the world the same."
+      "I used the button extensively for more than a year, and it is still on my mouse, though it is beginning to wear out. The part saved me the cost of a new mouse, and others around the world have used the design to do the same."
     ],
     "highlights": [],
     "links": [],
@@ -626,12 +626,10 @@ window.PROJECTS = [
     "imageAlt": "A hand holding a black earpiece with a lit green LED over a workbench with a soldering iron",
     "featured": false,
     "overview": [
-      "For Halloween one year, I dressed up as Raymond from Everything Everywhere All at Once and built replicas of his Bluetooth earpiece from the film. Each earpiece is 3D printed and contains an LED and a small battery. It was a small project, designed and built in a day or two.",
+      "For Halloween one year, I dressed up as Raymond from Everything Everywhere All at Once and built replicas of his Bluetooth earpiece from the film. Each earpiece is 3D printed and contains an LED and a small battery.",
       "## Design",
       "I sketched the design first and planned how to build it on the 3D printer. The earpiece is too complicated to print as one piece, because 3D printing needs flat sides to build on, so it is modular: the parts are printed separately and joined with screws. Wax paper diffuses the light from the LED.",
-      "Callout: ## Fit\nThe earpiece had to stay in my ear and remain comfortable for a full night of wear. It has a section that wraps around the ear and a small section that sits inside it. Getting this fit right took most of the work.",
-      "## Reflection",
-      "It was a fun project with a quick turnaround."
+      "Callout: ## Fit\nThe earpiece had to stay in my ear and remain comfortable for a full night of wear. It has a section that wraps around the ear and a small section that sits inside it. Getting this fit right took most of the work."
     ],
     "highlights": [],
     "links": [],
@@ -661,7 +659,7 @@ window.PROJECTS = [
       "Callout: ## Automatic braking\nReal wind turbines typically use mechanical brakes. This turbine uses an electrical brake instead: an Arduino Uno controls a relay that shorts the generator on itself, which brakes the turbine automatically in a simulated high-wind environment.",
       "![The turbine electronics: an Arduino Uno, a relay, a 9 V battery, and a breadboard in a laser-cut box, with the gearbox and motor above](assets/library/wind-turbine-electronics-box.jpg \"The control electronics: an Arduino Uno, a relay, a 9 V battery, and a breadboard in a laser-cut box.\")",
       "## Results",
-      "The turbine produced the highest voltage reading in my class. That reading was the basis of the comparison, because the course did not use a standardized load at the time, so the result does not translate directly to power output."
+      "The turbines were compared on voltage reading, because the course did not use a standardized load at the time, so the result does not translate directly to power output."
     ],
     "highlights": [],
     "links": [],
