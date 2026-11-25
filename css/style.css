@@ -2566,6 +2566,6 @@ a.tile:hover .tile-cta {
   text-transform: uppercase;
 }
 .related-title {
-  padding-top: 3px;
+  padding-top: 10px;
   font-size: 0.78rem;
 }

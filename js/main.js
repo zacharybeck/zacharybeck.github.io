@@ -884,14 +884,9 @@
           )
         : null;
 
-    // "Related": every other sub-project in the same group, as small thumbnails.
-    const classOf = (proj) => {
-      const parent = PROJECTS.find((x) => x.slug === proj.parent);
-      const m = /(Micro|Advanced)( Class)?/.exec(parent ? parent.title : proj.title);
-      return (m ? m[1] : "") + (proj.season ? ` ${proj.season}` : "");
-    };
+    // "Related": the other sub-projects of the same class (Advanced or Micro), as small thumbnails.
     const relatedItems = p.group
-      ? PROJECTS.filter((x) => x.group === p.group && x.parent && x.slug !== p.slug && x.status !== "Coming soon")
+      ? PROJECTS.filter((x) => x.group === p.group && x.parent && x.parent === (p.parent || p.slug) && x.slug !== p.slug && x.status !== "Coming soon")
           .slice()
           .sort((x, y) => Number(y.season || 0) - Number(x.season || 0))
       : [];
@@ -908,7 +903,6 @@
                 "a",
                 { class: "mini-tile", href: `project.html?p=${encodeURIComponent(x.slug)}` },
                 x.tileImage || x.image ? el("img", { class: "mini-img", src: x.tileImage || x.image, alt: "", loading: "lazy", width: 600, height: 375 }) : null,
-                el("span", { class: "related-class", text: classOf(x) }),
                 el("span", { class: "mini-title related-title", text: x.title.replace(/^SAE Aero (Micro|Advanced)( Class)?: /, "") })
               )
             )
