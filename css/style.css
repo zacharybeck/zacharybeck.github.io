@@ -2499,23 +2499,24 @@ a.tile:hover .tile-cta {
 .group-cta { margin: 18px 0 22px; }
 #group-projects { scroll-margin-top: 90px; }
 
-/* SAE tile with the picture split in two: each half is a link to that class's project */
-.tile-split .tile-img { object-position: 50% 50% !important; }
+/* SAE tile with the picture split in two: each half is a link to that class's project and pops out on hover */
 .split-zones {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
   height: 100%;
 }
-.split-zones a { cursor: pointer; }
-.split-zones polygon {
-  fill: transparent;
-  transition: fill 0.15s ease;
+.split-half { cursor: pointer; }
+.split-half image {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease, filter 0.35s ease;
 }
-.split-zones a:hover polygon,
-.split-zones a:focus-visible polygon {
-  fill: rgb(255 255 255 / 0.16);
+.split-half:hover image,
+.split-half:focus-visible image {
+  transform: scale(1.07);
+  filter: brightness(1.06);
 }
 .tile-split .tile-body {
   z-index: 2;
@@ -2531,20 +2532,11 @@ a.tile:hover .tile-cta {
 .tile-split .tile-title a:hover {
   text-decoration: underline;
 }
-.split-ctas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 12px;
-}
-.split-ctas .tile-cta {
-  margin-top: 0;
-  background: rgb(255 255 255 / 0.92);
-  border-color: transparent;
-  color: var(--ink, #1b1f2a);
+.tile-split .tile-cta {
   text-decoration: none;
+  align-self: flex-start;
 }
-.split-ctas .tile-cta:hover {
-  background: #fff;
-  color: var(--accent);
+.tile-split::after {
+  z-index: 1;
+  pointer-events: none;
 }

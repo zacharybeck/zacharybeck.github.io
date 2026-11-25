@@ -180,24 +180,38 @@
     };
     const split = SPLITS[g.slug];
     if (split && g.image) {
+      // The picture itself is an SVG so each half can be clipped and can pop out on its own when hovered.
       const NS = "http://www.w3.org/2000/svg";
       const svg = document.createElementNS(NS, "svg");
       svg.setAttribute("class", "split-zones");
       svg.setAttribute("viewBox", "0 0 1600 1000");
       svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
-      split.forEach((z) => {
+      svg.setAttribute("role", "group");
+      const defs = document.createElementNS(NS, "defs");
+      svg.append(defs);
+      split.forEach((z, n) => {
+        const clip = document.createElementNS(NS, "clipPath");
+        clip.setAttribute("id", `split-clip-${n}`);
+        const cp = document.createElementNS(NS, "polygon");
+        cp.setAttribute("points", z.points);
+        clip.append(cp);
+        defs.append(clip);
         const a = document.createElementNS(NS, "a");
         a.setAttribute("href", `project.html?p=${encodeURIComponent(z.slug)}`);
         a.setAttribute("aria-label", z.label);
-        const poly = document.createElementNS(NS, "polygon");
-        poly.setAttribute("points", z.points);
-        a.append(poly);
+        a.setAttribute("clip-path", `url(#split-clip-${n})`);
+        a.setAttribute("class", "split-half");
+        const img = document.createElementNS(NS, "image");
+        img.setAttribute("href", g.image);
+        img.setAttribute("width", "1600");
+        img.setAttribute("height", "1000");
+        img.setAttribute("preserveAspectRatio", "xMidYMid slice");
+        a.append(img);
         svg.append(a);
       });
       return el(
         "div",
         { class: "tile tile-wide tile-split" },
-        el("img", { class: "tile-img", src: g.image, alt: "", loading: "lazy", width: 1200, height: 750 }),
         svg,
         el(
           "div",
@@ -205,11 +219,7 @@
           el("h3", { class: "tile-title" }, el("a", { href: groupHref, text: g.title })),
           el("p", { class: "tile-meta", text: `${count} project${count === 1 ? "" : "s"}` }),
           tagList((g.tags || []).slice(0, 3)),
-          el(
-            "div",
-            { class: "split-ctas" },
-            split.map((z) => el("a", { class: "tile-cta", href: `project.html?p=${encodeURIComponent(z.slug)}`, text: `${z.label} →` }))
-          )
+          el("a", { class: "tile-cta", href: groupHref, text: "Click for more →" })
         )
       );
     }
