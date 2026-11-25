@@ -565,7 +565,6 @@ window.PROJECTS = [
     "featured": false,
     "overview": [
       "I designed this replacement side button after breaking the button on my Zowie EC2-B mouse. As no replacement part was available and no printable file existed, I designed and printed my own version based on the broken part and published it on Thingiverse for others to use.",
-      "Callout: ## Why I made it\nThe need was real: there was nowhere to buy a replacement part, so the only alternative was a new mouse.",
       "## The design",
       "The button has an organic shape, so the design took a lot of trial and error, and I used several Fusion 360 functions that I had not used before. The part drops directly into the mouse, with its center post seated in its slot. It is printed with supports at a 0.12 mm layer height and 100% infill, and the top surface is sanded, down to 400 grit, for a smooth feel.",
       "![Render of the replacement side button](assets/library/zowie-button-render.png \"A render of the replacement button.\")",
