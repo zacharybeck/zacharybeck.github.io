@@ -201,7 +201,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2025,
     "title": "SAE Aero Micro: Airframe Structure & Testing",
-    "summary": "Load testing of a physical structural model, taken to the aircraft's 3 g limit before final manufacturing.",
+    "summary": "Load testing of a physical structural model before final manufacturing.",
     "year": "2024–2025",
     "tags": [
       "Structural testing",
@@ -239,7 +239,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2025,
     "title": "SAE Aero Micro: Fabrication & Build Planning",
-    "summary": "Build planning from the start of the design, a laser-cut jig, and a written sequence for the 10 gluing operations.",
+    "summary": "Build planning, build sequencing, and manufacturing jig creation.",
     "year": "2024–2025",
     "tags": [
       "Build planning",
