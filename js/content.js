@@ -40,7 +40,7 @@ window.PAGES = {
 window.ABOUT = {
   
   paragraphs: [
-    "After working on many different types of teams from student projects to an international corporation, I have learned what is important to me. Ownership, support, and a strong mission.",
+    "After working on many different types of teams from student projects to an international corporation, I have learned what is important to me: Ownership, support, and a strong mission.",
     "I do my best work on teams that value honest feedback and foster collaboration and camaraderie, which is what I loved most about SAE Aero. I want to see the results of my work firsthand, cradle to grave, and help build the systems I would like to see in the world.",
     "Outside of work, I enjoy outdoors, playing music, and cooking. Here are some photos from my recent adventures.",
   ],
