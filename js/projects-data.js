@@ -593,7 +593,7 @@ window.PROJECTS = [
     "photos": [],
     "featured": false,
     "overview": [
-      "The folding hanger was a design challenge I set for myself in high school. I like hanging up my clothes, but a hanger has to be stretched through a shirt's collar or pushed in from the bottom. I wanted a hanger that folds, so it can go in from the top and then unfold. I could not find anything comparable at the time, so I designed and built one.",
+      "This folding hanger project was a design challenge I set for myself in high school, and it taught me a lot about design and manufacturing. I like hanging up my clothes, but a hanger has to be stretched through a shirt's collar or pushed in from the bottom. I wanted a hanger that folds, so it can go in from the top and then unfold. I could not find anything comparable at the time, so I designed and built one.",
       "## Design",
       "My first design used rubber bands and springs to hold the arms up, and the arms were closed by hand. The weight of a t-shirt was enough to deflect the arms, because the moment is much larger at the ends, so I moved to a mechanical lock.",
       "Collage: folding-hanger-sketch.jpg, 3d-printed-part-black.jpg \"My first concept sketch, and an early 3D-printed prototype that used elastics to hold the arms up.\"",
