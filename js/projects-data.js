@@ -488,7 +488,7 @@ window.PROJECTS = [
   {
     "slug": "smud-solar-regatta",
     "title": "Solar Regatta",
-    "summary": "A solar-powered catamaran built for the SMUD Solar Regatta, where I designed the frame, the wiring, and the propeller shaft.",
+    "summary": "A solar-powered catamaran built for an engineering competition.",
     "year": "2022",
     "tags": [
       "Solar power",
@@ -520,7 +520,7 @@ window.PROJECTS = [
   {
     "slug": "nerf-mods",
     "title": "Nerf Mods",
-    "summary": "Modified Nerf blasters with 3D-printed parts I designed in Fusion 360 and published on Thingiverse, including a folding stock that doubles as a battery holder.",
+    "summary": "A variety of homemade and modified Nerf blaster projects.",
     "year": "2020–2022",
     "tags": [
       "3D printing",
@@ -553,7 +553,7 @@ window.PROJECTS = [
   {
     "slug": "zowie-ec2b-button",
     "title": "Zowie EC2-B Side Button Replacement",
-    "summary": "A 3D-printed replacement side button for a Zowie EC2-B mouse, designed when no replacement part existed.",
+    "summary": "A 3D-printed replacement side button for a Zowie EC2-B mouse.",
     "year": "2021",
     "tags": [
       "3D printing",
@@ -579,7 +579,7 @@ window.PROJECTS = [
   {
     "slug": "folding-hanger",
     "title": "Folding Hanger",
-    "summary": "A folding hanger that goes into a shirt from the top, with a cam channel lock and laser-cut parts, designed as a challenge for myself in high school.",
+    "summary": "A folding hanger that utilizes a cam channel lock, constructed from laser-cut parts.",
     "year": "2022",
     "tags": [
       "Product design",
@@ -616,7 +616,7 @@ window.PROJECTS = [
   {
     "slug": "halloween-project",
     "title": "Halloween Costume Earpieces",
-    "summary": "Two 3D-printed, light-up earpieces for a Halloween costume, designed and built in a day or two.",
+    "summary": "Two 3D-printed, light-up earpieces for a Halloween costume.",
     "tags": [
       "3D printing",
       "LED electronics",
