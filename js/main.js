@@ -890,6 +890,11 @@
           .slice()
           .sort((x, y) => Number(y.season || 0) - Number(x.season || 0))
       : [];
+    // plus the overview page of the other class (Micro on Advanced pages, and the reverse)
+    const otherOverviews = p.group
+      ? PROJECTS.filter((x) => x.group === p.group && !x.parent && x.slug !== (p.parent || p.slug) && PROJECTS.some((c) => c.parent === x.slug))
+      : [];
+    otherOverviews.forEach((x) => relatedItems.push({ ...x, relatedTitle: `${(/(Micro|Advanced)/.exec(x.title) || ["", "Project"])[1]} Class overview` }));
     const related = relatedItems.length
       ? el(
           "section",
@@ -903,7 +908,7 @@
                 "a",
                 { class: "mini-tile", href: `project.html?p=${encodeURIComponent(x.slug)}` },
                 x.tileImage || x.image ? el("img", { class: "mini-img", src: x.tileImage || x.image, alt: "", loading: "lazy", width: 600, height: 375 }) : null,
-                el("span", { class: "mini-title related-title", text: x.title.replace(/^SAE Aero (Micro|Advanced)( Class)?: /, "") })
+                el("span", { class: "mini-title related-title", text: x.relatedTitle || x.title.replace(/^SAE Aero (Micro|Advanced)( Class)?: /, "") })
               )
             )
           )
