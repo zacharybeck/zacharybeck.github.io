@@ -7,7 +7,7 @@ window.SITE = {
   location: "Portland, OR",
   
   bio: [
-    "I'm a mechanical engineering student at the University of Portland, graduating in May 2027. I like hands-on work: designing something, building it, and testing it.",
+    "I like hands-on work: designing something, building it, and testing it.",
     "I captain the university's SAE Aero Design team, and I've done two co-op internships.",
   ],
   email: "zacharyleebeck@gmail.com",
