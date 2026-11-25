@@ -440,7 +440,7 @@ window.PROJECTS = [
     "imageAlt": "The updated payload on the landing mat, with its lift arm raised",
     "featured": false,
     "overview": [
-      "I led the testing for the aircraft, similar to the [testing on the Micro Class](project.html?p=sae-micro-airframe-structure). This caught a failure mode unique to this class, between the payload and the aircraft during landing.",
+      "I led the testing for the aircraft, similar to the [testing on the Micro Class](project.html?p=sae-micro-airframe-structure). This caught a failure mode unique to this class, between the payload and the aircraft, during landing.",
       "## What the tests showed",
       "Testing in March showed weak points in the landing gear, the catch mechanism, and the payload lift mechanism, and the April redesign addressed them. The team tested the airframe and the payload for the loads they would see in flight and landing, and after the redesign every component met or exceeded its required load in retesting.",
       "## Landing gear",
