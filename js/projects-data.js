@@ -626,7 +626,7 @@ window.PROJECTS = [
     "imageAlt": "A hand holding a black earpiece with a lit green LED over a workbench with a soldering iron",
     "featured": false,
     "overview": [
-      "For Halloween 2022 I dressed as Raymond from Everything Everywhere All at Once and built two copies of his earpiece from the film. Each earpiece is 3D printed and contains an LED and a small battery. It was a small project, designed and built in a day or two.",
+      "For Halloween 2022 I dressed as Raymond from Everything Everywhere All at Once and built two replicas of his Bluetooth earpiece from the film. Each earpiece is 3D printed and contains an LED and a small battery. It was a small project, designed and built in a day or two.",
       "## Design",
       "I sketched the design first and planned how to build it on the 3D printer. The earpiece is too complicated to print as one piece, because 3D printing needs flat sides to build on, so it is modular: the parts are printed separately and joined with screws. Wax paper diffuses the light from the LED.",
       "Callout: ## Fit\nThe earpiece had to stay in my ear and remain comfortable for a full night of wear. It has a section that wraps around the ear and a small section that sits inside it. Getting this fit right took most of the work.",
