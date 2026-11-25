@@ -653,7 +653,7 @@ window.PROJECTS = [
     "imageAlt": "A small wind turbine on a laser-cut base, with three dark 3D-printed airfoil blades and a laser-cut gearbox at the top of the tower",
     "featured": false,
     "overview": [
-      "The wind turbine is a first-semester project in the University of Portland's Introduction to Engineering course, EGR 110, which I took in the fall of 2022. The goal is to make a small turbine spin a DC motor, which acts as a generator, and produce a voltage. I had a lot of CAD experience, so I took the design further than the assignment required.",
+      "All freshman engineering students at the University of Portland build a wind turbine as part of the EGR 110 Intro to Engineering course, which I took in the fall of 2022. The goal is to make a small turbine spin a DC motor, which acts as a generator, and produce a voltage. I had a lot of CAD experience, so I took the design further than the assignment required.",
       "## Mechanical design",
       "I designed a gearbox, mounted near the top of the turbine, to bring the generator to its ideal speed. The blades use an airfoil profile to increase performance. I also experimented with other blade geometries, but none performed better than the airfoil, mainly because the simple airfoil blades I made were very lightweight.",
       "## Electronics",
