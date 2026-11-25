@@ -239,7 +239,7 @@ window.PROJECTS = [
     "group": "sae-aero",
     "season": 2025,
     "title": "SAE Aero Micro: Fabrication & Build Planning",
-    "summary": "A laser-cut jig, safe carbon fiber cutting, and a written build sequence for an epoxy assembly with 10 gluing operations.",
+    "summary": "How we planned the Micro aircraft's manufacturing, and then built two complete airframes.",
     "year": "2024–2025",
     "tags": [
       "Build planning",
