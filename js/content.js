@@ -32,7 +32,7 @@ window.SITE = {
 
 window.PAGES = {
   
-  about: "A bit about what I'm into, in engineering and outside it.",
+  about: "A little bit about my interests",
   
   contact: "Get in touch by email or LinkedIn.",
 };
@@ -40,8 +40,8 @@ window.PAGES = {
 window.ABOUT = {
   
   paragraphs: [
-    "I like seeing a project all the way through: owning a design, watching it get built, and testing it. I do my best work on teams that value ownership and honest feedback, which is what I loved most about SAE Aero. I want to see the results of my work firsthand, and to help build the systems I would like to see in the world.",
-    "Outside of work, I spend my time outdoors, mainly cycling and climbing. Here are some photos from my recent adventures.",
+    "After working on many different types of teams from student projects to an international corporation, I have learned what is important to me. Ownership, support, and a strong mission. I do my best work on teams that value honest feedback and foster collaboration and comradery which is what I loved most about SAE Aero. I want to see the results of my work firsthand, cradle to grave, and help build the systems I would like to see in the world.",
+    "Outside of work, I enjoy outdoors, playing music, and cooking. Here are some photos from my recent adventures.",
   ],
 
   
@@ -54,7 +54,7 @@ window.ABOUT = {
     {
       src: "assets/library/summit-snow-climb.jpg",
       alt: "Three climbers resting on a snowy summit with ice axes and packs",
-      caption: "Summiting Mount Hood in 2026.",
+      caption: "Summiting Mount Hood.",
     },
     {
       src: "assets/library/south-sister-summit.jpg",
@@ -68,6 +68,6 @@ window.ABOUT = {
     },
   ],
   interestsTitle: "What I'm into",
-  interests: ["Aerospace and UAVs", "Passenger rail", "Maritime", "Energy infrastructure"],
+  interests: ["Aerospace and UAVs", "Passenger rail", "Ferries and Marine Infrastructure", "Clean Energy"],
 };
 
