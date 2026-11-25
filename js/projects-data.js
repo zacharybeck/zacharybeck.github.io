@@ -247,7 +247,7 @@ window.PROJECTS = [
       "Jig design"
     ],
     "overview": [
-      "I started planning how the aircraft would be built alongside the initial design. The initial design merged the aero design with the fabrication into something we could actually manufacture, and I had watched earlier teams struggle with construction, so knowing exactly how every part would go together was one of my first priorities.",
+      "Aircraft manufacturing planning started with the initial concept. The initial design took the ideal aero design and made it into something we could actually fabricate, as I had watched earlier teams struggle with construction. Knowing exactly how every part would fit together was one of my first priorities.",
       "The final airframe uses balsa ribs laser-cut from CAD profiles, 3 mm carbon fiber rods as the main structure, 3D-printed PLA joints, and a foam leading edge, with epoxy holding it together and Monokote covering it. We tested lightweight PLA ribs, but balsa beat them in strength, weight, and manufacturability. We built two complete airframes, so we had a backup.",
       "![CAD of the final airframe structure](assets/library/report-final-construction-cad.png \"The final construction method in CAD: balsa ribs on 3 mm carbon fiber rods, with foam on the leading edge.\")",
       "Carbon fiber dust is hazardous, so we cut the 4-foot rods under a stream of water, wearing respirators, in a sectioned-off area of the machine shop. Laser-cutting the balsa took constant calibration, because variation between balsa sheets caused incomplete cuts or burned edges.",
