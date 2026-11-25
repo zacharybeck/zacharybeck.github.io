@@ -552,7 +552,7 @@ window.PROJECTS = [
   },
   {
     "slug": "zowie-ec2b-button",
-    "title": "Zowie EC2-B Side Button Replacement",
+    "title": "Mouse Button Replacement Part",
     "summary": "A 3D-printed replacement side button for a Zowie EC2-B mouse.",
     "year": "2021",
     "tags": [
