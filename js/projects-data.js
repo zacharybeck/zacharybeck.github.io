@@ -4,8 +4,8 @@ window.PROJECT_GROUPS = [
     "slug": "sae-aero",
     "title": "SAE Aero Design",
     "summary": "The University of Portland SAE Aero Design team: the Micro Class and Advanced Class aircraft, my role as team captain, and the pieces of each aircraft I worked on.",
-    "image": "assets/library/team-on-pad-sunny.jpg",
-    "imageAlt": "The SAE Aero Design team in purple shirts, arm in arm and smiling, behind their aircraft on the pad",
+    "image": "assets/library/aero-cover-split.jpg",
+    "imageAlt": "Split image: the Micro Class aircraft in flight above, the Advanced Class aircraft on the pavement below",
     "tags": [
       "Aircraft design",
       "Systems engineering",
