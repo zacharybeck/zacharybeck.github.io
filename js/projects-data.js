@@ -642,7 +642,7 @@ window.PROJECTS = [
   {
     "slug": "wind-turbine",
     "title": "Wind Turbine",
-    "summary": "A small wind turbine with a geared DC generator, airfoil blades, and an Arduino-controlled automatic brake, built in my first engineering course.",
+    "summary": "A small wind turbine with a geared DC generator, airfoil blades, and an Arduino-controlled automatic brake.",
     "tags": [
       "Fusion 360",
       "Arduino",
