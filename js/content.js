@@ -68,7 +68,7 @@ window.ABOUT = {
       caption: "Lead climbing some slab in City of Rocks.",
     },
   ],
-  interestsTitle: "What I'm into",
+  interestsTitle: "Engineering fields I'm interested in",
   interests: ["Aerospace and UAVs", "Passenger rail", "Ferries and Marine Infrastructure", "Clean Energy"],
 };
 
