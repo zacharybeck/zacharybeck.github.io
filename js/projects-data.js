@@ -20,8 +20,7 @@ window.PROJECT_GROUPS = [
     "introTitle": "About the program",
     "intro": [
       "SAE Aero Design is a student competition where university teams design, build, and fly aircraft to a set of rules. I've been captain of the University of Portland team since May 2024.",
-      "In that time the team has grown 5× in membership and from one team to three, with four international podium finishes. We compete in both the Micro Class and the Advanced Class.",
-      "The projects below are grouped by year."
+      "In that time the team has grown 5× in membership and from one team to three, with four international podium finishes. We compete in both the Micro Class and the Advanced Class."
     ],
     "photos": [],
     "headerImage": "assets/library/team-on-pad-sunny-header.jpg",
@@ -49,13 +48,12 @@ window.PROJECTS = [
     "featured": false,
     "overview": [
       "The 2024 Regular Class aircraft was a modular twin-boom cargo plane with a 15 ft wingspan, designed and built by a senior capstone team for SAE Aero Design West 2024 in Van Nuys, California. I supported the capstone team as a sophomore, through the club that was created during the 2022–2023 season.",
-      "Callout: ## What came next\nBeing at this competition is what led me to start the [Micro Class team](project.html?p=sae-aero-micro-2025) in 2025.",
       "## Rebuilding the aircraft",
       "The aircraft crashed on its first flight, which the team attributed to pilot error, wings that were not stiff enough, lower stability than predicted, and strong gusting wind. The stub wings, fuselage, and inner wing sections were badly damaged, and many people at the competition would have seen the damage and considered the team finished. The team took the aircraft apart, found that it could be fixed, and rebuilt it overnight from spare parts, using the manufacturing skills they had learned. It passed inspection again. I helped with the repairs.",
       "Collage: regular-2024-crash-midair.jpg, regular-2024-crash-wreck.jpg \"The aircraft inverted during the first flight, and the wreckage after it came down.\"",
       "Collage: regular-2024-crash-damage-1.jpg, regular-2024-crash-damage-2.jpg, regular-2024-crash-damage-3.jpg \"Damage to the aircraft after the first flight.\"",
       "The second flight came after the competition ended early because of weather, when a local flying club let the team fly. The rebuilt aircraft, flown by a more experienced pilot, took off and flew, but not for long, as it had become waterlogged in the rain. The team placed 11th overall of 34, 5th in the design report, and 9th in the presentation, and concluded that the wings twisted and needed to be stiffer.",
-      "Stats:\n- 15 ft | Wingspan\n- 19.2 lb | Aircraft weight\n- 34 teams | In the Regular Class\n- 11th | Overall result",
+      "Stats:\n- 11th | overall, of 34 teams\n- 19.2 lb | aircraft weight",
       "## What I worked on",
       "- Passed on lessons from the 2022–2023 season, including the pitfalls that team met.\n- Advised on CAD organization and on a parametric approach to the wing ribs.\n- Helped build the aircraft as extra hands in the shop.\n- Traveled to competition and helped repair the aircraft there.",
       "## CAD organization",
@@ -474,7 +472,6 @@ window.PROJECTS = [
     "imageAlt": "A blurred model of a tilt-rotor aircraft with the words Coming soon",
     "featured": false,
     "overview": [
-      "This project is coming soon.",
       "The team plans to return in 2027 with the payload and capture design from this year, and a total airframe redesign focused on VTOL transition, hover performance, and weight reduction. The plans include smaller motors and propellers, and a heavy focus on testing and integration.",
       "Back to the [2026 aircraft](project.html?p=sae-aero-advanced-vtol)."
     ],
@@ -594,8 +591,8 @@ window.PROJECTS = [
       "## Design",
       "My first design used rubber bands and springs to hold the arms up, and the arms were closed by hand. The weight of a t-shirt was enough to deflect the arms, because the moment is much larger at the ends, so I moved to a mechanical lock.",
       "Collage: folding-hanger-sketch.jpg, 3d-printed-part-black.jpg \"My first concept sketch, and an early 3D-printed prototype that used elastics to hold the arms up.\"",
-      "The final mechanism uses a cam channel. The arms and the locking arms rotate about different axes, so each arm tends to rotate into the pins on its locking arm, while the locking arms rotate freely inside the channel. When the hanger closes, the arms fold down. Designing it took a large linkage sketch in CAD, and it taught me about cam joints. The motion study ({vid:hanger-motion-study-1}) shows the mechanism folding, and the t-shirt video ({vid:hanger-t-shirt}) shows it working on a real shirt.",
-      "I modeled every part in SolidWorks and assembled them with motion studies, so I could check that the arms, the locking arms, and the cam channel move through their full range without interfering before anything was cut.",
+      "The final mechanism uses a cam channel. The arms and the locking arms rotate about different axes, so each arm tends to rotate into the pins on its locking arm, while the locking arms rotate freely inside the channel. When the hanger closes, the arms fold down. Designing it took a large linkage sketch in CAD. The motion study ({vid:hanger-motion-study-1}) shows the mechanism folding, and the t-shirt video ({vid:hanger-t-shirt}) shows it working on a real shirt.",
+      "I modeled every part and assembled them with motion studies, so I could check that the arms, the locking arms, and the cam channel move through their full range without interfering before anything was cut.",
       "Video: assets/video/hanger-t-shirt.mp4 \"The folding hanger on a t-shirt.\"",
       "Video: assets/video/hanger-motion-study-1.mp4 \"A SolidWorks motion study of the hanger folding.\" 2x",
       "Collage: folding-hanger-on-white-shirt.jpg, folding-hanger-on-black-shirt.jpg \"The final hanger in use on a white shirt and a black shirt.\"",
