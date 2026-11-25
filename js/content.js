@@ -7,7 +7,6 @@ window.SITE = {
   location: "Portland, OR",
   
   bio: [
-    "I like hands-on work: designing something, building it, and testing it.",
     "I captain the university's SAE Aero Design team, and I've done two co-op internships, at Boeing and Oregon Steel Mills.",
   ],
   email: "zacharyleebeck@gmail.com",
