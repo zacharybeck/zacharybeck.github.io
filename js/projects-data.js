@@ -19,8 +19,8 @@ window.PROJECT_GROUPS = [
     ],
     "introTitle": "About the program",
     "intro": [
-      "SAE Aero Design is a student competition where university teams design, build, and fly aircraft to a set of rules. I've been captain of the University of Portland team since May 2024.",
-      "In that time the team has grown 5× in membership and from one team to three, with four international podium finishes. We compete in both the Micro Class and the Advanced Class."
+      "SAE Aero Design is a student competition where university teams design, build, and fly aircraft. I've been captain of the University of Portland team since May 2024.",
+      "In that time the team has exploded in membership and expanded from one to three teams, racking up four international podium finishes to date. We now compete in the Micro, Regular, and Advanced classes."
     ],
     "photos": [],
     "headerImage": "assets/library/team-on-pad-sunny-header.jpg",
