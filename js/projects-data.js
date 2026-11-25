@@ -533,7 +533,7 @@ window.PROJECTS = [
     "photos": [],
     "featured": false,
     "overview": [
-      "In high school, I was into homemade and modified Nerf blasters, designing and 3D printing parts for them at home. I published some of the designs on Thingiverse so others could use them.",
+      "In high school, I was into homemade and modified Nerf blasters, designing and 3D printing parts for them at home. I published some of the designs on Thingiverse so others could use them. Here is a look at some of those parts.",
       "## Jam door with a display",
       "The Stryfe jam door insert mounts a 0.96 in OLED display. It was designed around a solenoid cage, which leaves room for any pusher. One M3 screw assembles it: the lock holds the screen from the bottom, and the wires exit at the top. The display is driven by an Arduino. I started from another author's open-source code from GitHub and modified it for my own needs.",
       "Collage: nerf-stryfe-jam-door-display.jpg, nerf-stryfe-jam-door-wiring.jpg \"The jam door with its display, and the wiring behind the door.\"",
