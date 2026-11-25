@@ -553,7 +553,7 @@ window.PROJECTS = [
   {
     "slug": "zowie-ec2b-button",
     "title": "Zowie EC2-B Side Button Replacement",
-    "summary": "A 3D-printed replacement side button for a Zowie EC2-B mouse, designed when no replacement part existed.",
+    "summary": "After breaking my mouse, I designed this replacement side button based on the broken part, as no replacement part was available and no printable file existed. I published it on Thingiverse for others to use.",
     "year": "2021",
     "tags": [
       "3D printing",
@@ -580,7 +580,7 @@ window.PROJECTS = [
   {
     "slug": "folding-hanger",
     "title": "Folding Hanger",
-    "summary": "A folding hanger that goes into a shirt from the top, with a cam channel lock and laser-cut parts, designed as a challenge for myself in high school.",
+    "summary": "In high school, I designed a folding hanger out of laser-cut parts.",
     "year": "2022",
     "tags": [
       "Product design",
@@ -616,7 +616,7 @@ window.PROJECTS = [
   {
     "slug": "halloween-project",
     "title": "Halloween Costume Earpieces",
-    "summary": "Two 3D-printed, light-up earpieces for a Halloween costume, designed and built in a day or two.",
+    "summary": "For Halloween one year, I dressed up as Raymond from Everything Everywhere All at Once and built replicas of his Bluetooth earpiece.",
     "tags": [
       "3D printing",
       "LED electronics",
