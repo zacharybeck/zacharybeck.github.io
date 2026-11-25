@@ -32,7 +32,7 @@ window.SITE = {
 
 window.PAGES = {
   
-  about: "A little bit about my interests",
+  about: "My professional interests and a peek into my life outside of work",
   
   contact: "Get in touch by email or LinkedIn.",
 };
